@@ -150,7 +150,7 @@ const getDetailsFromProperty = async (state, dispatch) => {
     if (propertyId) {
       let payload = await httpRequest(
         "post",
-        `/property-services/property/_search?tenantId=${tenantId}&propertyIds=${propertyId}`,
+        `/pt-services-v2/property/_search?tenantId=${tenantId}&ids=${propertyId}`,
         "_search",
         [],
         {}
